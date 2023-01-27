@@ -1,0 +1,17 @@
+@import "../../scss-variables";
+
+.post-input-box {
+  width: 95%;
+}
+.post-input {
+  width: 100%;
+  margin-left: 2%;
+  padding: 2%;
+  border: 1px solid $border-input;
+  border-radius: 0.3em ;
+  background-color: $comment-white-bk;
+  outline: none;
+}
+::placeholder{
+  color: $comment-gray-time-text;
+}

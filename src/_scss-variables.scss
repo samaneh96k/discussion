@@ -1,0 +1,25 @@
+$comment-post-bk:#fafbfc;
+$comment-white-bk:#ffff;
+$comment-gray-text:#707172;
+$comment-gray-time-text:#b8babb;
+$likebtn-bk-blue:#235ee7;
+$avatar-bk-blue:#deedfc;
+$likebtn-icon-gray:#939db6;
+$likebtn-txt-blue:#898b90;
+$likebtn-bk-gray:#f4f5fa;
+$body-bk:#dde1e5;
+$border-input:#cccfd0;
+$text-link-bk:#deedfc;
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+@mixin flexLayout-align-start {
+display: flex;
+align-items: flex-start;
+justify-content: center;}
+@mixin flexLayout-justify-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;}

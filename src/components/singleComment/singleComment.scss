@@ -1,0 +1,114 @@
+@import "../../scss-variables";
+
+.comment-container {
+  width: 80%;
+  margin: 0 auto;
+  @include  flexLayout-align-start;
+  margin-bottom: 1%;
+  background-color: $comment-post-bk;
+  padding: 2% 9%;
+}
+.postcomment-container {
+  width: 100%;
+ @include  flexLayout-align-start;
+  margin: 4% 0;
+}
+.avatar-size {
+  width: 7.3%;
+}
+
+.comment-content {
+  text-align: start;
+  margin-left: 2%;
+  width: 100%;
+}
+.comment-content {
+  .username {
+    @include flexLayout-justify-start;
+}
+}
+.comment-content {
+  .username h2 {
+    margin: 0;
+  }
+}
+.comment-content {
+  .username span {
+    color: $comment-gray-time-text;
+    padding: 2%;
+    font-size: medium;
+  }
+}
+.comment-content {
+  .text-content {
+  color: $comment-gray-text;
+  width: 90%;}
+}
+.like-content {
+@include flexLayout-justify-start;
+  width: 50%;
+  margin-top: 1em;
+}
+
+.like-content {
+  .btn-like-comment {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 1% 1.2%;
+    border-radius: 1.2em;
+  }
+}
+.like-content {
+  .btn-like {
+    background-color: $likebtn-bk-blue;
+    color: $comment-white-bk;
+  }
+}
+.like-content {
+  .btn-unlike {
+    background-color: $likebtn-bk-gray;
+    color: $likebtn-icon-gray;
+  }
+}
+.unlike-icon,
+.like-icon {
+  font-size: large;
+}
+
+.like-content {
+  .btn-like-comment span {
+    font-weight: bold;
+  }
+}
+.btn-reply {
+  color: $likebtn-bk-blue;
+  font-weight: bold;
+  margin-left: 1em;
+  cursor: pointer;
+}
+.reply-comment {
+  @include  flexLayout-align-start;
+}
+.reply-comment-box {
+  margin: 2% 0;
+  width: 100%;
+}
+
+.text-link {
+  color: $likebtn-bk-blue;
+  background-color: $text-link-bk;
+  text-decoration: none;
+  font-weight: 600;
+}
+.reply-left-border {
+  margin: 1.5em auto;
+
+  width: 10%;
+  background-color: $border-input;
+}
+.disply-none {
+  display: none;
+}
