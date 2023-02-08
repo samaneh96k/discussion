@@ -26,9 +26,11 @@ const CommentProvider: React.FC<{ children: React.ReactNode }> = props => {
           discussions.filter(
             dis => dis.id === id && dis.replies.push(newComment)
           );
+
           setDiscussions([...discussions]);
          
         }
+        return discussions
       });
     } else {
   
@@ -48,13 +50,14 @@ const CommentProvider: React.FC<{ children: React.ReactNode }> = props => {
           dis.likes += 1;
         }
 
-        setDiscussions([...discussions]);
+  setDiscussions([...discussions]);
       }
+      return discussions
     });
   };
   const likeCommentReply = (id: number) => {
-    discussions.map((dis: IDiscussion) => {
-      dis.replies.map(rep => {
+    discussions.forEach((dis: IDiscussion) => {
+      dis.replies.forEach(rep => {
         if (rep.id === id) {
           if (rep.iLikedIt) {
             rep.iLikedIt = false;

@@ -1,5 +1,5 @@
 
-import { useRef,useEffect,useState } from "react";
+import {useState } from "react";
 import getTimeAgo from "./../../utils/timeAgo";
 import { IDiscussion } from '../../dataTypes';
 
@@ -21,7 +21,7 @@ const Comment: React.FC<{
       <>
         {dis.user.avatar
           ? <div className="img-avatar-box avatar-size ">
-              <img className="img-avatar" src={dis.user.avatar} />
+              <img className="img-avatar" src={dis.user.avatar} alt=""/>
               {isreply && dis.replies.length> 0 &&  <div className="reply-left-border" style={{height:`${height-100}px`}} />}
             </div>
           : <div className="text-avatar-box">
@@ -44,7 +44,7 @@ const Comment: React.FC<{
           {dis.text.split(" ").map(
               (text,index) =>
                 text.match(regex)
-                  ? <a href="#" className="text-link" key={index}>
+                  ? <a href="/" className="text-link" key={index}>
                       {text}
                     </a>
                   : <span key={index}>{`${text} `}</span>

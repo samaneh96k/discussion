@@ -11,7 +11,7 @@ const SingleComment: React.FC<{ dis: IDiscussion }> = props => {
   const { dis } = props;
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
-  const [isreply, setReply] = useState<boolean>(false);
+  const [isreply] = useState<boolean>(false);
   const [replyShow, setShow] = useState<boolean>(false);
 
   const nameSpliter = (name: string) => {
@@ -23,7 +23,7 @@ const SingleComment: React.FC<{ dis: IDiscussion }> = props => {
 
   useEffect(() => {
     nameSpliter(dis.user.name);
-  }, []);
+  }, [dis]);
 
   return (
     <div className="comment-container">

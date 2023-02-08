@@ -1,5 +1,5 @@
 import { CommentContext } from "../../context/commentContext";
-import { CommentContextType, IComment, IDiscussion } from "../../dataTypes";
+import { CommentContextType, IDiscussion } from "../../dataTypes";
 import { useContext } from 'react';
 import { AiFillLike } from 'react-icons/ai';
 

@@ -27,7 +27,7 @@ const CommentReply: React.FC<{
       <>
         {dis.user.avatar
           ? <div className="img-avatar-box avatar-size ">
-              <img className="img-avatar" src={dis.user.avatar} />
+              <img className="img-avatar" src={dis.user.avatar}  alt=""/>
              
             </div>
           : <div className="text-avatar-box">
@@ -49,7 +49,7 @@ const CommentReply: React.FC<{
             {dis.text.split(" ").map(
               (text,index) =>
                 text.match(regex)
-                  ? <a href="#" className="text-link" key={index}>
+                  ? <a href="/" className="text-link" key={index}>
                       {text}
                     </a>
                   : <span key={index}>{`${text} `}</span>
