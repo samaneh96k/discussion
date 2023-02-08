@@ -34,7 +34,7 @@ const PostComment: React.FC<{ placeholder: string; id: number }> = ({
         <img
           src="https://www.godaddy.com/garage/wp-content/uploads/judith-kallos-BW-NEW-150x150.jpg"
           className="img-avatar"
-        />
+        alt=""/>
       </div>
       <form
         className="post-input-box"
